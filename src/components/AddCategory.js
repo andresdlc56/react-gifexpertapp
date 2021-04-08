@@ -33,7 +33,6 @@ export const AddCategory = ({ setCategories }) => {
         // EVITANDO EL REFRESCAMIENTO DE LA PANTALLA
         e.preventDefault();
 
-
         // VALIDACION 
         if(inputValue.trim().length > 2){
             /* DEBIDO A QUE NO TENGO ACCESO A LAS "categories" DIRECTAMENTE DESDE ESTE COMPONENTE POR QUE 
@@ -52,6 +51,7 @@ export const AddCategory = ({ setCategories }) => {
     
     return (
         <form onSubmit={ handleSubmit }>
+            <p>{ inputValue }</p>
             <input 
                 type='text'
                 value={ inputValue }

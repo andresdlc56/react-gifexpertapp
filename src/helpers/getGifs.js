@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types';
 
 /* ============================ 
 
@@ -28,4 +29,8 @@ export const getGifs = async (category) => {
     });
 
     return gifs;
+}
+
+getGifs.protoType = {
+    category: PropTypes.string.isRequired
 }

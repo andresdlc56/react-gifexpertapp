@@ -4,6 +4,8 @@ import { GifGripItem } from './GifGripItem';
 
 //import { getGifs } from '../helpers/getGifs';
 
+import PropTypes from 'prop-types';
+
 export const GifGrip = ({ category }) => {
 
     /* -------------------------------
@@ -43,4 +45,8 @@ export const GifGrip = ({ category }) => {
             
         </>
     )
+}
+
+GifGrip.protoType = {
+    category: PropTypes.string.isRequired
 }

@@ -9,11 +9,12 @@ import { GifGrip } from './GifGrip';
 
 ======================================= */
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = [] }) => {
 
 
     // CREANDO UN useState PARA MANEJAR LAS CATEGORIAS 
-    const [categories, setCategories] = useState(['Dragon Ball']);
+    //const [categories, setCategories] = useState(['Dragon Ball']);
+    const [categories, setCategories] = useState(defaultCategories);
 
 
     return (
